@@ -1,7 +1,68 @@
-# My Python Project
+# MRT-Projekt2-Lehre 
 
 ## Beschreibung
-Ein professionelles Python-Projekt mit einer sauberen Struktur.
+Die Dokumentation und Sammlung von Skripten für das Verständnis der zu benutzenden Hardware
+- Realsense D435   
+- Orbbec Femtobolt
+
+## Verwendung
+
+Starten Sie die Anwendung:
+```bash
+python src/main.py
+```
+
+## Tests ausführen
+
+```bash
+pytest tests/
+```
+
+## Projektstruktur
+my_python_project/
+│
+├── .venv/                      # Virtuelle Umgebung (nicht in Git)
+│
+├── src/                        # Hauptquellcode
+│   ├── __init__.py
+│   ├── main.py                 # Einstiegspunkt der Anwendung
+│   ├── config.py               # Konfigurationsdateien
+│   │
+│   ├── Pipeline/               # Zusammenfassende Funktionen
+│   │   ├── __init__.py
+│   │   └── user.py
+│   │
+│   ├── services/               # Business Logic
+│   │   ├── __init__.py
+│   │   └── user_service.py
+│   │
+│   └── utils/                  # Hilfsfunktionen
+│       ├── __init__.py
+│       └── helpers.py
+│
+├── tests/                      # Unit- und Integrationstests
+│   ├── __init__.py
+│   ├── test_main.py
+│   └── test_user_service.py
+│
+├── docs/                       # Dokumentation
+│   ├── README.md
+│   └── api_documentation.md
+│
+├── data/                       # Datendateien
+│   ├── raw/                    # Rohdaten
+│   └── processed/              # Verarbeitete Daten
+│
+├── scripts/                    # Skripte für Automatisierung
+│   └── setup.py
+│
+├── .gitignore                  # Git-Ignorierung
+├── .env.example                # Beispiel-Umgebungsvariablen
+├── requirements.txt            # Projekt-Abhängigkeiten
+├── setup.py                    # Package-Installation
+├── README.md                   # Projektdokumentation
+└── LICENSE                     # Lizenz
+
 
 ## Installation
 
@@ -24,27 +85,6 @@ python -m venv .venv
 ```bash
 pip install -r requirements.txt
 ```
-
-## Verwendung
-
-Starten Sie die Anwendung:
-```bash
-python src/main.py
-```
-
-## Tests ausführen
-
-```bash
-pytest tests/
-```
-
-## Projektstruktur
-
-- `src/` - Hauptquellcode
-- `tests/` - Unit- und Integrationstests
-- `docs/` - Dokumentation
-- `data/` - Datendateien
-- `scripts/` - Automatisierungsskripte
 
 ## Lizenz
 MIT License
