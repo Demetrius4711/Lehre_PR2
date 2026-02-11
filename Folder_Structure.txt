@@ -1,0 +1,43 @@
+my_python_project/
+│
+├── .venv/                      # Virtuelle Umgebung (nicht in Git)
+│
+├── src/                        # Hauptquellcode
+│   ├── __init__.py
+│   ├── main.py                 # Einstiegspunkt der Anwendung
+│   ├── config.py               # Konfigurationsdateien
+│   │
+│   ├── Pipeline/               # Zusammenfassende Funktionen
+│   │   ├── __init__.py
+│   │   └── user.py
+│   │
+│   ├── services/               # Business Logic
+│   │   ├── __init__.py
+│   │   └── user_service.py
+│   │
+│   └── utils/                  # Hilfsfunktionen
+│       ├── __init__.py
+│       └── helpers.py
+│
+├── tests/                      # Unit- und Integrationstests
+│   ├── __init__.py
+│   ├── test_main.py
+│   └── test_user_service.py
+│
+├── docs/                       # Dokumentation
+│   ├── README.md
+│   └── api_documentation.md
+│
+├── data/                       # Datendateien
+│   ├── raw/                    # Rohdaten
+│   └── processed/              # Verarbeitete Daten
+│
+├── scripts/                    # Skripte für Automatisierung
+│   └── setup.py
+│
+├── .gitignore                  # Git-Ignorierung
+├── .env.example                # Beispiel-Umgebungsvariablen
+├── requirements.txt            # Projekt-Abhängigkeiten
+├── setup.py                    # Package-Installation
+├── README.md                   # Projektdokumentation
+└── LICENSE                     # Lizenz
